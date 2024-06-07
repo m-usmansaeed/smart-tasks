@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="163" id="KGk-i7-Jjw" customClass="TaskStatueTVCell" customModule="Smart_tasks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="163"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="163"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unresolved_sign" translatesAutoresizingMaskIntoConstraints="NO" id="Bl3-aA-IC5">
+                        <rect key="frame" x="110" y="40" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="8YM-Td-vqI"/>
+                            <constraint firstAttribute="width" secondItem="Bl3-aA-IC5" secondAttribute="height" id="mcd-mS-LzJ"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Bl3-aA-IC5" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="0ZX-vK-s0T"/>
+                    <constraint firstItem="Bl3-aA-IC5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="40" id="R2c-ya-d8i"/>
+                    <constraint firstAttribute="bottom" secondItem="Bl3-aA-IC5" secondAttribute="bottom" constant="40" id="YXd-Qk-2KH"/>
+                    <constraint firstItem="Bl3-aA-IC5" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="xLc-8u-mgR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="imgViewStatus" destination="Bl3-aA-IC5" id="NmG-dk-Vm4"/>
+            </connections>
+            <point key="canvasLocation" x="42.748091603053432" y="73.591549295774655"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="unresolved_sign" width="294" height="291"/>
+    </resources>
+</document>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AmsiPro-Bold.otf">
+            <string>AmsiPro-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="45" id="KGk-i7-Jjw" customClass="TaskStatusActionsCell" customModule="Smart_tasks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="u27-9k-qJw">
+                        <rect key="frame" x="16" y="5" width="288" height="40"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCQ-jr-oaL">
+                                <rect key="frame" x="0.0" y="0.0" width="134" height="40"/>
+                                <color key="backgroundColor" name="STGreen"/>
+                                <fontDescription key="fontDescription" name="AmsiPro-Bold" family="AmsiPro-Bold" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Resolve">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnResolveTask:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="6sJ-04-vB8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLv-Oe-sst">
+                                <rect key="frame" x="154" y="0.0" width="134" height="40"/>
+                                <color key="backgroundColor" name="STPink"/>
+                                <fontDescription key="fontDescription" name="AmsiPro-Bold" family="AmsiPro-Bold" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Can't resolve">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnCantResolveTask:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="DQX-Og-gIl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rCQ-jr-oaL" firstAttribute="width" secondItem="SLv-Oe-sst" secondAttribute="width" id="Wbm-5m-6oQ"/>
+                            <constraint firstAttribute="height" constant="40" id="rAP-UB-scT"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="u27-9k-qJw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="7df-ns-YED"/>
+                    <constraint firstAttribute="bottom" secondItem="u27-9k-qJw" secondAttribute="bottom" constant="5" id="9Ov-kV-VNB"/>
+                    <constraint firstAttribute="trailing" secondItem="u27-9k-qJw" secondAttribute="trailing" constant="16" id="epg-Ce-4ch"/>
+                    <constraint firstItem="u27-9k-qJw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="n6Q-LK-eAA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="btnResolveTask" destination="rCQ-jr-oaL" id="SV0-NR-CFz"/>
+                <outlet property="btncantResolveTask" destination="SLv-Oe-sst" id="8vD-UD-wOU"/>
+            </connections>
+            <point key="canvasLocation" x="41" y="62"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="STGreen">
+            <color red="0.058823529411764705" green="0.47058823529411764" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="STPink">
+            <color red="0.93725490196078431" green="0.29411764705882354" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

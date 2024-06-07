@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YF9-6a-bXg">
+                                <rect key="frame" x="0.0" y="59" width="430" height="605.66666666666663"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="uNR-RP-ctA">
+                                        <rect key="frame" x="105.33333333333333" y="190.66666666666669" width="219.33333333333337" height="224.66666666666669"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="uNR-RP-ctA" secondAttribute="height" multiplier="165:169" id="aNX-Hs-4ow"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="uNR-RP-ctA" firstAttribute="centerX" secondItem="YF9-6a-bXg" secondAttribute="centerX" id="Luj-V6-pXb"/>
+                                    <constraint firstItem="uNR-RP-ctA" firstAttribute="width" secondItem="YF9-6a-bXg" secondAttribute="width" multiplier="0.51" id="cy5-Yo-Vnu"/>
+                                    <constraint firstItem="uNR-RP-ctA" firstAttribute="centerY" secondItem="YF9-6a-bXg" secondAttribute="centerY" id="zJQ-jY-Exs"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="intro_illustration" translatesAutoresizingMaskIntoConstraints="NO" id="X2W-b9-64v">
+                                <rect key="frame" x="75.333333333333343" y="660.66666666666663" width="279.33333333333326" height="271.33333333333337"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="X2W-b9-64v" secondAttribute="height" multiplier="205:199" id="sgj-co-oea"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="STBackground"/>
+                        <constraints>
+                            <constraint firstItem="YF9-6a-bXg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0cu-Gk-SZS"/>
+                            <constraint firstAttribute="bottom" secondItem="X2W-b9-64v" secondAttribute="bottom" id="0wu-Pt-u22"/>
+                            <constraint firstItem="YF9-6a-bXg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7b1-af-TLW"/>
+                            <constraint firstItem="X2W-b9-64v" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="IAS-Kg-SrR"/>
+                            <constraint firstItem="X2W-b9-64v" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.65" id="Vol-9K-6m0"/>
+                            <constraint firstItem="YF9-6a-bXg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bm7-vJ-M7F"/>
+                            <constraint firstItem="YF9-6a-bXg" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.65" id="m3x-hf-D0L"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="intro_illustration" width="205" height="199"/>
+        <image name="logo" width="165" height="169"/>
+        <namedColor name="STBackground">
+            <color red="1" green="0.85098039215686272" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AmsiPro-Bold.otf">
+            <string>AmsiPro-Bold</string>
+        </array>
+        <array key="AmsiPro-Regular.otf">
+            <string>AmsiPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="109" id="KGk-i7-Jjw" customClass="TaskTVCell" customModule="Smart_tasks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="101"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="101"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hdq-Dm-pGE">
+                        <rect key="frame" x="11" y="0.0" width="298" height="91"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ae-Vn-hmL">
+                                <rect key="frame" x="10" y="10" width="278" height="19"/>
+                                <fontDescription key="fontDescription" name="AmsiPro-Bold" family="AmsiPro-Bold" pointSize="15"/>
+                                <color key="textColor" name="STPink"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="58m-tk-bRD">
+                                <rect key="frame" x="10" y="36" width="278" height="1"/>
+                                <color key="backgroundColor" name="STCream"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="yod-zM-2ZK"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bho-hj-w3r">
+                                <rect key="frame" x="10" y="47" width="51" height="12"/>
+                                <fontDescription key="fontDescription" name="AmsiPro-Regular" family="AmsiPro-Regular" pointSize="12"/>
+                                <color key="textColor" name="STBrown"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Days left" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gI-Nk-wu3">
+                                <rect key="frame" x="125.33333333333336" y="47" width="47.666666666666671" height="12"/>
+                                <fontDescription key="fontDescription" name="AmsiPro-Regular" family="AmsiPro-Regular" pointSize="12"/>
+                                <color key="textColor" name="STBrown"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Priority" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X8C-Vj-2j9">
+                                <rect key="frame" x="247.66666666666671" y="47" width="40.333333333333343" height="12"/>
+                                <fontDescription key="fontDescription" name="AmsiPro-Regular" family="AmsiPro-Regular" pointSize="12"/>
+                                <color key="textColor" name="STBrown"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1212" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8i-mf-8Hw">
+                                <rect key="frame" x="10" y="66" width="33.666666666666664" height="15"/>
+                                <fontDescription key="fontDescription" name="AmsiPro-Bold" family="AmsiPro-Bold" pointSize="15"/>
+                                <color key="textColor" name="STPink"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12121" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jw-dj-gty">
+                                <rect key="frame" x="125.33333333333336" y="66" width="40.666666666666671" height="15"/>
+                                <fontDescription key="fontDescription" name="AmsiPro-Bold" family="AmsiPro-Bold" pointSize="15"/>
+                                <color key="textColor" name="STPink"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WoL-pT-JIB">
+                                <rect key="frame" x="260.33333333333331" y="66" width="15" height="15"/>
+                                <color key="backgroundColor" name="STPink"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="hbt-QK-swd"/>
+                                    <constraint firstAttribute="width" constant="15" id="rVr-v7-NBS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bho-hj-w3r" firstAttribute="leading" secondItem="1Ae-Vn-hmL" secondAttribute="leading" id="3kT-Ly-8QD"/>
+                            <constraint firstItem="3jw-dj-gty" firstAttribute="leading" secondItem="3gI-Nk-wu3" secondAttribute="leading" id="8U6-ax-RkQ"/>
+                            <constraint firstAttribute="bottom" secondItem="3jw-dj-gty" secondAttribute="bottom" constant="10" id="BFo-Bt-vSm"/>
+                            <constraint firstItem="WoL-pT-JIB" firstAttribute="top" secondItem="X8C-Vj-2j9" secondAttribute="bottom" constant="7" id="KF0-tL-Wo2"/>
+                            <constraint firstItem="X8C-Vj-2j9" firstAttribute="top" secondItem="58m-tk-bRD" secondAttribute="bottom" constant="10" id="Lgv-UY-2Th"/>
+                            <constraint firstAttribute="bottom" secondItem="k8i-mf-8Hw" secondAttribute="bottom" constant="10" id="PFk-Nj-xt5"/>
+                            <constraint firstItem="3gI-Nk-wu3" firstAttribute="centerX" secondItem="hdq-Dm-pGE" secondAttribute="centerX" id="QE7-hH-ajL"/>
+                            <constraint firstItem="WoL-pT-JIB" firstAttribute="centerY" secondItem="3jw-dj-gty" secondAttribute="centerY" id="Qcv-cF-fqE"/>
+                            <constraint firstItem="58m-tk-bRD" firstAttribute="top" secondItem="1Ae-Vn-hmL" secondAttribute="bottom" constant="7" id="RxT-be-G6B"/>
+                            <constraint firstItem="k8i-mf-8Hw" firstAttribute="leading" secondItem="1Ae-Vn-hmL" secondAttribute="leading" id="T7n-0m-siN"/>
+                            <constraint firstItem="1Ae-Vn-hmL" firstAttribute="top" secondItem="hdq-Dm-pGE" secondAttribute="top" constant="10" id="TWC-Rk-tPf"/>
+                            <constraint firstItem="58m-tk-bRD" firstAttribute="trailing" secondItem="1Ae-Vn-hmL" secondAttribute="trailing" id="VqI-Cl-DHu"/>
+                            <constraint firstItem="1Ae-Vn-hmL" firstAttribute="leading" secondItem="hdq-Dm-pGE" secondAttribute="leading" constant="10" id="WQD-IY-OYC"/>
+                            <constraint firstItem="3gI-Nk-wu3" firstAttribute="top" secondItem="58m-tk-bRD" secondAttribute="bottom" constant="10" id="WmJ-vE-NaC"/>
+                            <constraint firstItem="3jw-dj-gty" firstAttribute="top" secondItem="3gI-Nk-wu3" secondAttribute="bottom" constant="7" id="X6f-xI-pKs"/>
+                            <constraint firstItem="X8C-Vj-2j9" firstAttribute="trailing" secondItem="58m-tk-bRD" secondAttribute="trailing" id="Z1H-qS-2IL"/>
+                            <constraint firstAttribute="trailing" secondItem="1Ae-Vn-hmL" secondAttribute="trailing" constant="10" id="eXc-wY-7vG"/>
+                            <constraint firstItem="bho-hj-w3r" firstAttribute="top" secondItem="58m-tk-bRD" secondAttribute="bottom" constant="10" id="fMj-9l-QsC"/>
+                            <constraint firstItem="58m-tk-bRD" firstAttribute="leading" secondItem="1Ae-Vn-hmL" secondAttribute="leading" id="lwv-5s-oHQ"/>
+                            <constraint firstItem="WoL-pT-JIB" firstAttribute="centerX" secondItem="X8C-Vj-2j9" secondAttribute="centerX" id="p2Z-PP-Gkc"/>
+                            <constraint firstItem="k8i-mf-8Hw" firstAttribute="top" secondItem="bho-hj-w3r" secondAttribute="bottom" constant="7" id="s7F-Pb-dM6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="hdq-Dm-pGE" secondAttribute="bottom" constant="10" id="6Np-2N-vdx"/>
+                    <constraint firstItem="hdq-Dm-pGE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="7ua-Sp-kv9"/>
+                    <constraint firstItem="hdq-Dm-pGE" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.93125" id="N0a-Kb-GWL"/>
+                    <constraint firstItem="hdq-Dm-pGE" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="TF1-5q-6aj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="container" destination="hdq-Dm-pGE" id="43w-TL-toG"/>
+                <outlet property="lblDaysLeft" destination="3jw-dj-gty" id="gwc-Bz-zOy"/>
+                <outlet property="lblDueDate" destination="k8i-mf-8Hw" id="Gnv-d7-pH4"/>
+                <outlet property="lblTaskTitle" destination="1Ae-Vn-hmL" id="3u1-Ul-sSj"/>
+                <outlet property="priorityBadge" destination="WoL-pT-JIB" id="h6G-C2-niR"/>
+            </connections>
+            <point key="canvasLocation" x="117.55725190839694" y="47.535211267605639"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="STBrown">
+            <color red="0.41568627450980394" green="0.36862745098039218" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="STCream">
+            <color red="0.96470588235294119" green="0.93725490196078431" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="STPink">
+            <color red="0.93725490196078431" green="0.29411764705882354" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
